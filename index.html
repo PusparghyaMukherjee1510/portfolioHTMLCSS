@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PUSPARGHYA-FrontEnd Portfolio Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Poppins:wght@400;700&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 30);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+        nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            height: 60px;
+            background-color: aqua;
+            position: fixed;
+            top: 0;
+            width: -webkit-fill-available;
+        }
+        .left{
+            font-size: 1.3rem;
+        }
+        .left:hover{
+            font-size: 1.5rem;
+            color: red;
+            font-weight: 600;
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li{
+            list-style-type: none;
+            margin: 0 23px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li a:hover{
+            text-decoration: none;
+            color: red;
+            font-size: 1.3rem;
+            font-weight: 700;
+        }
+        .firstSection{
+            display: flex;
+            justify-content: space-around;
+            margin: 100px 0;
+        }
+        .firstSection > div{
+            width: 30%;
+        }
+        .leftSection{
+            font-size: 2rem;
+            margin: 30px 0;
+        }
+        .rightSection img{
+            width: 80%;
+            margin: 50px 0;
+        }
+        .secondSection{
+            max-width: 80vw;
+            margin: auto;
+        }
+        secondSection h1{
+            font-size: 2rem;
+        }
+        .red{
+            color: red;
+            font-weight: 700;
+        }
+        .yellow{
+            color: yellow;
+             font-weight: 700;
+        }
+        .forestgreen{
+            color: forestgreen;
+            font-weight: 700;
+        }
+        .cyan{
+            color: cyan;
+            font-weight: 700;
+        }
+        .wheat{
+            color: wheat;
+            font-weight: 700;
+        }
+        .purple{
+            color: purple;
+            font-weight: 700;
+        }
+        .gray{
+            color: gray;
+            font-size: xx-small;
+        }
+       main hr{
+            margin: 40px 100px;
+            background-color: whitesmoke;
+            height: 1.2px;
+            border: 0;
+        }
+        .secondSection .box{
+            background-color: rgb(25, 25, 65);
+            height: 70vh;
+            width: 80vw;
+            margin: 10px 0;
+            padding: 20px;
+        }
+        .secondSection .box p{
+            margin: 0 25px;
+        }
+        .image-exp{
+            height: 30px;
+            width: 80px;
+            margin: 20px 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">PUSPARGHYA-FrontEnd Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home<a/></li>
+                    <li><a href="/">About<a/></li>
+                    <li><a href="/">Projects<a/></li>
+                    <li><a href="/">Contacts<a/></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Welcome to My Portfolio.
+                <div>Myself <span class="red">PUSPARGHYA MUKHERJEE</span> and</div>
+                <div>I am a <span class="yellow">FrontEnd Web Developer</span> with </div>
+                <!--<span class="forestgreen">HTML</span> , <span class="cyan">CSS</span> , <span class="wheat">JavaScript</span> & <span class="purple">React.Js</span> -->
+                <span id="element" class="cyan"></span>
+            </div>
+            <div class="rightSection">
+                <img src="images/right1.png" alt="right_bg">
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <span class="gray">Till now I have the</span>
+            <h1>Work Experiences</h1>
+            <div class="box">
+                <img src="images/Power-Automate-22.png" alt="Power_Automate" class="image-exp"/>
+                <p>Power Automate & Power Automate Desktop Developer at Celebal Technologies(May 2022 - Nov 2022).</p>
+                <img src="images/data_entry.png" alt="data_entry" class="image-exp"/>
+                <p>Administration Personnel & Data Entry Operator at St. Thomas English School(Sept 2020-Dec 2020).</p>
+                <img src="images/computer_teacher.png" alt="computer_teacher" class="image-exp">
+                <p>Computer Teacher at Webel Informatics Ltd.(Dec 2019-Sept 2020).</p>
+                <img src="images/offc_asst.jpg" alt="offc_asst" class="image-exp">
+                <p>Office Assistant at National Insurance Corporation Ltd.(Mar 2019-Aug 2019).</p>
+            </div>
+        </section>
+    </main>
+   <footer>
+    <div class="footer">
+        <div class="footer-first">
+            <h3>Contact Me</h3>
+        </div>
+        <div class="footer-second"></div>
+        <div class="footer-third"></div>
+        <div class="footer-fourth"></div>
+    </div>
+   </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['HTML', 'CSS','JavaScript','&amp; React.Js'],
+          typeSpeed: 80,
+        });
+      </script>
+</body>
+
+</html>
